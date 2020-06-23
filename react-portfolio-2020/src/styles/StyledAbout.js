@@ -24,4 +24,10 @@ export const StyledAbout = styled.div`
  .skill-icon {
      font-size: 4rem;
  }
+ 
+ .about-info {
+     width: 70%;
+     margin: 0 auto;
+     line-height: 1.8;
+ }
     `

@@ -22,11 +22,11 @@ export default function Home() {
     return (
         <StyledHome>
 
-            <div>
+            <div className='container'>
             <img src={logo} alt='logo with initials RDS' />
-            </div>
             <h1>Robert D Stepanov</h1>
-            <Typical steps={['Web Designer', 2000, 'Software Developer', 2000, 'Welcome to my Portfolio!', 2000]}
+            </div>
+            <Typical className='banner' steps={['Web Designer', 2000, 'Software Developer', 2000, 'Welcome to my Portfolio!', 2000]}
             loop = {1}
             wrapper = 'b' />
             <div className='icons'>
@@ -34,12 +34,14 @@ export default function Home() {
                             <a href="mailto:robertdstepanov@gmail.com" target="_blank"><icon className="fas fa-envelope"></icon></a>
                             <a href="https://www.linkedin.com/in/robert-stepanov-7b7739aa/" target="_blank"><icon alt="linked in logo" className="fab fa-linkedin-in"></icon></a>
                             <a href="https://github.com/robertstepanov" target="_blank"><icon alt="github logo" className="fab fa-github"></icon></a>
-                            <a href="https://github.com/robertstepanov" target="_blank"><icon alt="resume logo" className="fas fa-file"></icon></a>
+                            <a href="../assets/Resume.pdf" download><icon alt="resume logo" className="fas fa-file"></icon></a>
                            
                             
             </div>
             <button className='cta-button'><a href="Projects">My Projects</a></button>
+            
             <Footer footerClass={''} />
+    
         </StyledHome>
     )
 }
