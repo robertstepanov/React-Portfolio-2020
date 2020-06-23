@@ -7,9 +7,10 @@ export const StyledFooter = styled.footer`
     height: 8vh;
     display: flex;
     justify-content: center;
+    align-items: center;
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
-   
+   font-size: .8rem;
     `

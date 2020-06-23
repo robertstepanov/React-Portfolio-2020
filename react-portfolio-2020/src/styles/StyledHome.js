@@ -5,12 +5,9 @@ export const StyledHome = styled.div`
     background-color: #353535;
     height: 100%;
 
-    .container {
-        height: 100%;
-    }
-
     h1 {
         color: #fff;
+        margin-top: 0;
     }
 
     .banner {
@@ -22,7 +19,7 @@ export const StyledHome = styled.div`
        border-radius: 5px;
        padding: 10px 30px;
        background-color: white;
-       margin: 30px auto;
+       margin-bottom: 100px;
    }
 
    .cta-button a {

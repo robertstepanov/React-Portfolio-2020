@@ -3,6 +3,7 @@ import Footer from './Footer'
 import logo from '../images/RDSWeb.png';
 import Typical from 'react-typical';
 import { StyledHome } from '../styles/StyledHome';
+import Resume from '../assets/Resume.pdf'
 
 
 import {faEnvelope, faFile} from '@fortawesome/free-solid-svg-icons'
@@ -34,7 +35,7 @@ export default function Home() {
                             <a href="mailto:robertdstepanov@gmail.com" target="_blank"><icon className="fas fa-envelope"></icon></a>
                             <a href="https://www.linkedin.com/in/robert-stepanov-7b7739aa/" target="_blank"><icon alt="linked in logo" className="fab fa-linkedin-in"></icon></a>
                             <a href="https://github.com/robertstepanov" target="_blank"><icon alt="github logo" className="fab fa-github"></icon></a>
-                            <a href="../assets/Resume.pdf" download><icon alt="resume logo" className="fas fa-file"></icon></a>
+                            <a href={Resume} download='Resume.pdf'><icon alt="resume logo" className="fas fa-file"></icon></a>
                            
                             
             </div>
