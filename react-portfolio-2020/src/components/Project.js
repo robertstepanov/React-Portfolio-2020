@@ -35,7 +35,7 @@ return (
         <ReactCardFlip isFlipped={isFlipped} flipDirection='horizontal' className='flip-div'>
             <CardFront>
                 <ImgDiv>
-                <a href={project.url} target='_blank'><h2>{project.title}</h2></a>
+                <a href={project.url} target='_blank' className='project-title'><h2>{project.title}</h2></a>
                 <a href={project.url} target='_blank' ><Img alt={project.alt} src={project.image} className='project-image'/></a>
                 <BtnDiv>
                 <div className='project-btn'><a href={project.repo} target='_blank'><icon alt="github logo" className="fab fa-github project-icon"></icon></a></div>

@@ -14,7 +14,7 @@ export const StyledAbout = styled.div`
        width: 75%;
        margin: 20px auto;
        justify-content: space-between;
-       margin: 10% auto;
+       margin: 10% auto 0 auto;
    }
 
    .icon-container:hover {

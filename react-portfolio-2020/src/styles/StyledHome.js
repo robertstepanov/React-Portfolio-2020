@@ -3,7 +3,8 @@ import styled from 'styled-components';
 export const StyledHome = styled.div`
 
     background-color: #353535;
-    height: 100%;
+    height: 90vh;
+   
 
     h1 {
         color: #fff;
@@ -19,7 +20,7 @@ export const StyledHome = styled.div`
        border-radius: 5px;
        padding: 10px 30px;
        background-color: white;
-       margin-bottom: 100px;
+       
    }
 
    .cta-button a {

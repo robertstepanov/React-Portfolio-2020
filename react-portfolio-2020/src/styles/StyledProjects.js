@@ -9,13 +9,15 @@ heitht: 100vh;
 align-items: center;
 padding-bottom: 100px;
 
+
+h1 { 
+    color: #fff;
+}
+
 .top-btn {
     width: 200px;
    
 }
 
-.footer {
-    position: none;
-}
 
 `
