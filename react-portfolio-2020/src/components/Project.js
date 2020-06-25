@@ -1,7 +1,12 @@
 import React, { useState } from 'react'
 import ReactCardFlip from 'react-card-flip'
-import { StyledProject, CardFront, CardBack, Container, ImgDiv, Img } from '../styles/StyledProject';
+import { StyledProject, CardFront, CardBack, Container, ImgDiv, Img, BtnDiv } from '../styles/StyledProject';
+import {fas} from '@fortawesome/free-solid-svg-icons'
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { dom } from '@fortawesome/fontawesome-svg-core'
+dom.watch()
 
+library.add( fas)
 
 export default function Project(props) {
     const {project} = props;
@@ -31,14 +36,22 @@ return (
             <CardFront>
                 <ImgDiv>
                 <a href={project.url} target='_blank'><h2>{project.title}</h2></a>
-                <a href={project.url} target='_blank' ><Img alt={project.alt} src={project.image}/></a>
-                <button onClick={handleClick}>More Info</button>
+                <a href={project.url} target='_blank' ><Img alt={project.alt} src={project.image} className='project-image'/></a>
+                <BtnDiv>
+                <div className='project-btn'><a href={project.repo} target='_blank'><icon alt="github logo" className="fab fa-github project-icon"></icon></a></div>
+                <div className='project-btn'><a href={project.url} target='_blank'><icon alt="link to website" className="fas fa-link project-icon" ></icon></a></div>
+                <div className='project-btn' onClick={handleClick}><icon alt="flips card" className="fas fa-info-circle project-icon" ></icon></div>
+                </BtnDiv>
                 </ImgDiv>
             </CardFront>
 
             <CardBack>
-                <h2>Back</h2>
-                 <button onClick={handleClick}>More Info</button>
+                <ImgDiv>
+                    <h2>{project.title}</h2>
+                    <h3>{project.skills}</h3>
+                    <h3>{project.desc}</h3>
+                    <button onClick={handleClick}>More Info</button>
+                 </ImgDiv>
             </CardBack>
         </ReactCardFlip>
 

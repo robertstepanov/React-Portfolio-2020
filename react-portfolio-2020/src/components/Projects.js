@@ -21,7 +21,7 @@ export default function Projects() {
             })}
         </div>
         <button onClick={scrollToTop} className='top-btn'>Back to top</button>
-        <Footer />
+        <Footer  className='footer' footerClass={' '}/>
         </Container>
     )
 }

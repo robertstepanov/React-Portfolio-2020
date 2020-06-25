@@ -8,6 +8,10 @@ export const StyledNav = styled.nav`
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
 
     .nav-link {
         color: #fff;
