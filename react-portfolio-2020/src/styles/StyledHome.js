@@ -32,10 +32,14 @@ export const StyledHome = styled.div`
        margin: 30px auto;
    }
 
+
    a {
        color: white;
        margin: 20px 40px;
        font-size: 2em;
    }
 
+   a:hover {
+       color: yellow;
+   }
     `

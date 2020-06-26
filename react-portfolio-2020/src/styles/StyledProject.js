@@ -13,7 +13,7 @@ color: black;
 `
 
 export const CardBack = styled.div`
-color: black;
+color: #fff;;
 
 
 
@@ -29,6 +29,10 @@ margin-top: -40px;
 .project-title {
     color: #fff;
     cursor: pointer;
+}
+
+.project-title:hover {
+    color: yellow;
 }
 `
 
@@ -58,6 +62,10 @@ export const ImgDiv = styled.div`
         font-size: 2rem;
         color: white;
         cursor: pointer;
+    }
+
+    .project-icon:hover {
+        color: yellow;
     }
 
    

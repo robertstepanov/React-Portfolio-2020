@@ -19,4 +19,12 @@ export const StyledNav = styled.nav`
         margin-right: 30px;
     }
 
+    .nav-link:hover {
+        border-bottom: 2px solid yellow;
+    }
+
+    .nav-link:focus {
+        color: yellow;
+    }
+
     `
