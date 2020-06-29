@@ -5,6 +5,10 @@ export const StyledHome = styled.div`
     background-color: #353535;
     height: 90vh;
    
+    .logo {
+        width: 300px;
+        padding-top: 20px;
+    }
 
     h1 {
         color: #fff;
@@ -20,14 +24,17 @@ export const StyledHome = styled.div`
        border-radius: 5px;
        padding: 10px 30px;
        background-color: white;
-       
-   }
-
-   .cta-button a {
-       text-decoration: none;
        color: black;
+       width: 150px;
    }
 
+   .cta-button:hover {
+       color: yellow;
+       background-color: #353535;
+       border: 2px solid yellow;
+       cursor: pointer;
+   }
+   
    .icons {
        margin: 30px auto;
    }

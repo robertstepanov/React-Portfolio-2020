@@ -13,7 +13,22 @@ color: black;
 `
 
 export const CardBack = styled.div`
+
 color: #fff;;
+
+.card-back {
+    width: 900px;
+    height: 500px;
+
+//  @media(max-width: 740px){
+//         width: 90%;
+//         margin: 2% auto 0 auto;
+       
+//     }
+
+
+}
+
 
 
 
@@ -47,6 +62,11 @@ export const ImgDiv = styled.div`
    .project-image {
        width: 100%;
    }
+
+    @media(max-width: 740px){
+        width: 90%;
+        margin: 2% auto 0 auto;
+    }
     
 `
 

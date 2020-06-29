@@ -1,6 +1,6 @@
 import React  from 'react'
 import Footer from './Footer'
-import logo from '../images/RDSWeb.png';
+import logo from '../images/RS_logo.png';
 import Typical from 'react-typical';
 import { StyledHome } from '../styles/StyledHome';
 import Resume from '../assets/Resume.pdf'
@@ -25,8 +25,8 @@ export default function Home() {
         <StyledHome>
 
             <div className='container'>
-            <img src={logo} alt='logo with initials RDS' />
-            <h1>Robert D Stepanov</h1>
+            <img className='logo' src={logo} alt='logo with initials RDS' />
+            <h1>Robert Stepanov</h1>
             </div>
             <Typical className='banner' steps={['Web Designer', 2000, 'Software Developer', 2000, 'Welcome to my Portfolio!', 2000]}
             loop = {1}
@@ -40,7 +40,7 @@ export default function Home() {
                            
                             
             </div>
-            <button className='cta-button'><a href="Projects">My Projects</a></button>
+            <a href="Projects"><button className='cta-button'>My Work</button></a>
             
             <Footer footerClass={''} />
     

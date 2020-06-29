@@ -8,7 +8,7 @@ export default function Nav() {
         <StyledNav>
             <NavLink to = '/' exact={true} className='nav-link'>Home</NavLink>
             <NavLink to = '/about' className='nav-link'>About</NavLink>
-            <NavLink to = '/projects' className='nav-link'>Projects</NavLink>
+            <NavLink to = '/projects' className='nav-link'>My Work</NavLink>
             <NavLink to = '/contact' className='nav-link'>Contact</NavLink>
         </StyledNav>
     )

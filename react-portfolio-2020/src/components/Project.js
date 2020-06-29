@@ -46,10 +46,15 @@ return (
             </CardFront>
 
             <CardBack>
-                <ImgDiv>
+                <ImgDiv className='card-back'>
                     <h2>{project.title}</h2>
                     <h3>{project.skills}</h3>
                     <h3>{project.desc}</h3>
+                     <BtnDiv>
+                <div className='project-btn'><a href={project.repo} target='_blank'><icon alt="github logo" className="fab fa-github project-icon"></icon></a></div>
+                <div className='project-btn'><a href={project.url} target='_blank'><icon alt="link to website" className="fas fa-link project-icon" ></icon></a></div>
+                <div className='project-btn' onClick={handleClick}><icon alt="flips card" className="fas fa-info-circle project-icon" ></icon></div>
+                </BtnDiv>
                     <button onClick={handleClick}>More Info</button>
                  </ImgDiv>
             </CardBack>
