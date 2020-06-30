@@ -12,9 +12,13 @@ export const StyledAbout = styled.div`
    .skills {
        display: flex;
        width: 75%;
-       margin: 20px auto;
+       margin: 0 auto;
        justify-content: space-between;
        margin: 10% auto 0 auto;
+   }
+
+   .icon-container {
+       margin-top: -50px;
    }
 
    .icon-container:hover {
@@ -26,7 +30,7 @@ export const StyledAbout = styled.div`
  }
  
  .about-info {
-     width: 70%;
+     width: 60%;
      margin: 0 auto;
      line-height: 1.8;
  }
