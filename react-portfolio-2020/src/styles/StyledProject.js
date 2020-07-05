@@ -7,7 +7,7 @@ align-items: center;
 width: 100%;
 padding: 50px 0; 
 
-@media (min-width: 500px) and (max-width: 800px) {
+@media (min-width: 375px) and (max-width: 800px) {
     width: 100%;
     height: 100%;
 }
@@ -18,7 +18,7 @@ export const CardFront = styled.div`
     width: 900px;
 
 
-@media (min-width: 500px) and (max-width: 800px){
+@media (min-width: 375px) and (max-width: 800px){
         width: 90%;
     }
     
@@ -50,7 +50,7 @@ h2, h3 {
     width: 900px;
     height: 400px;
 
- @media (min-width: 500px) and (max-width: 800px){
+ @media (min-width: 375px) and (max-width: 800px){
         width: 90%;
     }
 
@@ -70,7 +70,7 @@ export const ImgDiv = styled.div`
        width: 100%;
    }
 
-    @media (min-width: 500px) and (max-width: 800px){
+    @media (min-width: 375px) and (max-width: 800px){
         width: 90%;
         margin: 0 auto;
     }
@@ -101,7 +101,7 @@ export const Img = styled.img`
 
     width: 500px;
 
-    @media (min-width: 500px) and (max-width: 800px){
+    @media (min-width: 375px) and (max-width: 800px){
         width: 75%;
     }
     

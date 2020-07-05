@@ -42,7 +42,7 @@ export const StyledAbout = styled.div`
      line-height: 2;
  }
 
- @media (min-width: 500px) and (max-width: 800px) {
+ @media (min-width: 375px) and (max-width: 800px) {
     
     .title {
         margin-bottom: 15px;
