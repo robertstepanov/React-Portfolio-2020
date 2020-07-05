@@ -27,4 +27,8 @@ export const StyledNav = styled.nav`
         color: yellow;
     }
 
+    @media (min-width: 500px) and (max-width: 800px) {
+        justify-content: center;
+   }
+
     `

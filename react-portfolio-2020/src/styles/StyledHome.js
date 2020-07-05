@@ -4,10 +4,7 @@ export const StyledHome = styled.div`
 
     background-color: #353535;
     height: 90vh;
-
-    @media(max-width: 375px) {
-        height: 100vh;
-    }
+    width: 100%;
    
     .container {
         display: flex;
@@ -15,11 +12,6 @@ export const StyledHome = styled.div`
         align-items: center;
         width: 100%;
         padding-bottom: 40px;
-
-        @media(max-width: 375px) {
-                flex-direction: column;
-               
-         }
     }
 
     .title {
@@ -30,10 +22,6 @@ export const StyledHome = styled.div`
     .logo {
         width: 300px;
         padding-top: 20px;
-
-        @media(max-width: 375) {
-            width: 75px;
-        }
     }
 
     h1 {
@@ -103,5 +91,24 @@ export const StyledHome = styled.div`
 
    a:hover {
        color: yellow;
+   }
+
+   @media (min-width: 500px) and (max-width: 800px) {
+           height: 90vh;
+           overflow: hidden;
+
+
+       .logo {
+           width: 200px;
+       }
+
+       .container {
+           flex-direction: column;
+           width: 100%;
+       }
+
+       .icons {
+           margin: 0 auto;
+       }
    }
     `

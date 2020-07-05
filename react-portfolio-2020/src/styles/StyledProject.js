@@ -1,53 +1,60 @@
 import styled from 'styled-components';
 
-export const StyledProject = styled.div`
+export const Container = styled.div`
+display: flex;
+justify-content: center;
+align-items: center;
+width: 100%;
+padding: 50px 0; 
 
-
-
+@media (min-width: 500px) and (max-width: 800px) {
+    width: 100%;
+    height: 100%;
+}
 `
 
 export const CardFront = styled.div`
+.card-front {
+    width: 900px;
 
-color: black;
 
+@media (min-width: 500px) and (max-width: 800px){
+        width: 90%;
+    }
+    
+}
+
+.project-title {
+    color: #fff;
+    cursor: pointer;
+    padding: 20px 0;
+}
+
+.project-title:hover {
+    color: yellow;
+}
 `
 
 export const CardBack = styled.div`
 
 color: #fff;;
 
+h2, h3 {
+    margin-bottom: 30px;
+}
+// .project-desc {
+//     margin: 30px auto;
+// }
+
 .card-back {
     width: 900px;
-    height: 500px;
+    height: 400px;
 
-//  @media(max-width: 740px){
-//         width: 90%;
-//         margin: 2% auto 0 auto;
-       
-//     }
+ @media (min-width: 500px) and (max-width: 800px){
+        width: 90%;
+    }
 
 
-}
-
-
-
-
-`
-export const Container = styled.div`
-display: flex;
-justify-content: center;
-align-items: center;
-width: 100%;
-height: 100vh;
-margin-top: -40px;
-
-.project-title {
-    color: #fff;
-    cursor: pointer;
-}
-
-.project-title:hover {
-    color: yellow;
 }
 `
 
@@ -63,12 +70,13 @@ export const ImgDiv = styled.div`
        width: 100%;
    }
 
-    @media(max-width: 740px){
+    @media (min-width: 500px) and (max-width: 800px){
         width: 90%;
-        margin: 2% auto 0 auto;
+        margin: 0 auto;
     }
     
 `
+
 
   export const BtnDiv = styled.div`
     height: 50px;
@@ -87,18 +95,14 @@ export const ImgDiv = styled.div`
     .project-icon:hover {
         color: yellow;
     }
-
-   
-`;
+`
 
 export const Img = styled.img`
 
     width: 500px;
-    @media(max-width: 1020px){
+
+    @media (min-width: 500px) and (max-width: 800px){
         width: 75%;
     }
-    @media(max-width: 740px){
-        width: 55%;
-        margin-top: 4%;
-    }
+    
 `;

@@ -13,4 +13,9 @@ export const StyledFooter = styled.footer`
     bottom: 0;
     width: 100%;
    font-size: .8rem;
+
+    @media (max-width: 500px) {
+
+      width: 100%;
+   }
     `
