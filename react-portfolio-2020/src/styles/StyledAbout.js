@@ -2,8 +2,8 @@ import styled from 'styled-components';
 
 export const StyledAbout = styled.div`
 
-    background: #353535;
-    color: #fff;
+    background:  #1d1e22;
+    color:  #d4d4dc;
     width: 100%l
     height: 100vh;
 
@@ -14,25 +14,33 @@ export const StyledAbout = styled.div`
         align-items: center;
         width: 100%;
         padding-bottom: 40px;
+       
     }
 
     .title {
-        margin: 30px auto;
+        margin: 40px  auto;
+        color:  #d4d4dc;
     }
    
    .skills {
        display: flex;
        width: 75%;
        justify-content: space-between;
-       margin: 10% auto 0 auto;
+       margin: 5% auto 0 auto;
+       padding-bottom: 5%;
    }
 
    .icon-container:hover {
-       color: yellow ;
+       color:#feda6a ;
    }
 
  .skill-icon {
      font-size: 4rem;
+     color:  #d4d4dc;
+ }
+
+ .skill-icon:hover {
+     color: #feda6a;
  }
  
  .about-info {
@@ -40,10 +48,10 @@ export const StyledAbout = styled.div`
      margin: 0 auto;
      text-align: left;
      line-height: 2;
- }
+    }
 
- @media (min-width: 375px) and (max-width: 800px) {
-    
+ @media (min-width: 375px) and (max-width: 812px)  {
+
     .title {
         margin-bottom: 15px;
     }
@@ -54,17 +62,20 @@ export const StyledAbout = styled.div`
     }
 
     .icon-container {
-        height: 100px;
+        height: 100%;
         width: 20%;
         margin-right: 15px;
     }
 
     .icon-container p {
         font-size: .75em;
+        padding-bottom: 30px;
     }
 
     .skills {
         flex-wrap: wrap;
+        width: 100%;
+        
     }
 
     .skill-icon {

@@ -17,19 +17,6 @@ export default function Project(props) {
         setIsFlipped(!isFlipped);
     }
 
-    // return (
-    //     <div>
-    //     {/* <ReactCardFlip isFlipped={isFlipped} flipDirection='horizontal'> */}
-    //         <div className='front-card'><a href={project.url} target='_blank'><h2>{project.title}</h2></a></div>
-    //         <div><a href={project.url} target='_blank'><img alt={project.alt} src={project.image}/></a></div>
-
-    //         <div className='back-card'>
-    //             <h2>Back</h2>
-    //         </div>
-    //     {/* </ReactCardFlip> */}
-    //     </div>
-    // )
-
 return (
     <Container>
         <div className='flip-div'>
@@ -56,7 +43,6 @@ return (
                 <div className='project-btn'><a href={project.url} target='_blank'><icon alt="link to website" className="fas fa-link project-icon" ></icon></a></div>
                 <div className='project-btn' onClick={handleClick}><icon alt="flips card" className="fas fa-info-circle project-icon" ></icon></div>
                 </BtnDiv>
-                    {/* <button onClick={handleClick}>More Info</button> */}
                  </ImgDiv>
             </CardBack>
         </ReactCardFlip>

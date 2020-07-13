@@ -1,17 +1,22 @@
 import styled from 'styled-components';
 
-export const StyledHome = styled.div`
 
-    background-color: #353535;
+export const StyledHome = styled.div`
+    background-color: #1d1e22;
     height: 90vh;
     width: 100%;
-   
+    background-image: url('https://live.staticflickr.com/65535/50094334946_da7d7eea1b_m.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+
     .container {
         display: flex;
         justify-content: center;
         align-items: center;
         width: 100%;
-        padding-bottom: 40px;
+        padding-top: 40px;
     }
 
     .title {
@@ -20,32 +25,40 @@ export const StyledHome = styled.div`
     }
 
     .logo {
-        width: 300px;
+        width: 275px;
+        height: 300px;
         padding-top: 20px;
     }
 
+    
+
+    .cls-1 {
+        fill:  #feda6a;
+    }
+
     h1 {
-        color: #fff;
-        margin-top: 0;
+        color: #d4d4dc;
+        margin-bottom: 15px;
+        font-size: 2.5rem;
     }
 
     .banner {
-        color: #fff;
-        font-size: 1.5rem;
+        color: #feda6a;
+        font-size: 1.2rem;
     }
 
    .cta-button {
        border-radius: 5px;
        padding: 10px 30px;
-       background-color: white;
+       background-color:#feda6a;
        color: black;
-       width: 150px;
+       width: 250px;
    }
 
    .cta-button:hover {
-       color: yellow;
-       background-color: #353535;
-       border: 2px solid yellow;
+       color: #feda6a;
+       background-color: #1d1e22;
+       border: 2px solid #feda6a;
        cursor: pointer;
    }
    
@@ -84,13 +97,13 @@ export const StyledHome = styled.div`
     }
 
    a {
-       color: white;
+       color: #d4d4dc;
        margin: 20px 40px;
        font-size: 2em;
    }
 
    a:hover {
-       color: yellow;
+       color: #feda6a;
    }
 
    @media (min-width: 375px) and (max-width: 800px) {
@@ -100,6 +113,11 @@ export const StyledHome = styled.div`
 
        .logo {
            width: 200px;
+           padding-top: 0;
+       }
+
+       .title {
+           padding-top: 0;
        }
 
        .container {

@@ -1,10 +1,12 @@
 import React  from 'react'
 import Footer from './Footer'
-import logo from '../images/RS_logo.png';
+// import logo from '../images/RS_logo_silver.png';
 import resume from '../images/resume_icon.png';
 import Typical from 'react-typical';
 import { StyledHome } from '../styles/StyledHome';
 import Resume from '../assets/Resume.pdf'
+// import SvgLogo from '../images/RS_logo_new-01.svg'
+import { ReactComponent as SvgLogo } from '../images/RS_logo_new-01.svg';
 
 
 
@@ -24,10 +26,15 @@ library.add(faGithub, faLinkedinIn, faEnvelope, faFile, faReact, faPython, faNod
 export default function Home() {
     return (
         <StyledHome>
-
             <div className='container'>
-            <div className='logo'>
-            <img className='logo' src={logo} alt='logo with initials RDS' />
+            <div className='logo-container'>
+            {/* <img className='logo' src={logo} alt='logo with initials RDS' /> */}
+            {/* <img className='logo' src={SvgLogo} alt='logo' style={{fill:"#feda6a"}}/> */}
+
+            <SvgLogo className='logo'/>
+
+            
+           
             </div>
             <div className='title'>
             <h1>Robert Stepanov</h1>
@@ -38,7 +45,7 @@ export default function Home() {
             </div>
             <div className='icons'>
                
-                            <a href="mailto:robertdstepanov@gmail.com" target="_blank"><icon className="fas fa-envelope"></icon></a>
+                            {/* <a href="mailto:robertdstepanov@gmail.com" target="_blank"><icon className="fas fa-envelope"></icon></a> */}
                             <a href="https://www.linkedin.com/in/robert-stepanov-7b7739aa/" target="_blank"><icon alt="linked in logo" className="fab fa-linkedin-in"></icon></a>
                             <a href="https://github.com/robertstepanov" target="_blank"><icon alt="github logo" className="fab fa-github"></icon></a>
                             <a href={Resume} download='Resume.pdf ' className='resume'><span className='tooltip'>Resume</span><icon alt="resume logo" className="fas fa-file-pdf"></icon></a>

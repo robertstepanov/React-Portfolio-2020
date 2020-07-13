@@ -1,13 +1,18 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-display: flex;
-justify-content: center;
-align-items: center;
+
+// display: flex;
+// justify-content: center;
+// align-items: center;
 width: 100%;
 padding: 50px 0; 
 
-@media (min-width: 375px) and (max-width: 800px) {
+a {
+    text-decoration: none;
+}
+
+@media (min-width: 375px) and (max-width: 812px) {
     width: 100%;
     height: 100%;
 }
@@ -15,29 +20,32 @@ padding: 50px 0;
 
 export const CardFront = styled.div`
 .card-front {
-    width: 900px;
+    // width: 500px;
+    // height: 400px;
+    background-color: #1d1e22;
+    border: 1px solid #fff;
 
 
-@media (min-width: 375px) and (max-width: 800px){
+@media (min-width: 375px) and (max-width: 812px){
         width: 90%;
     }
     
 }
 
 .project-title {
-    color: #fff;
+    color:#d4d4dc;
     cursor: pointer;
     padding: 20px 0;
 }
 
 .project-title:hover {
-    color: yellow;
+    color: #feda6a;
 }
 `
 
 export const CardBack = styled.div`
+color: #d4d4dc;
 
-color: #fff;;
 
 h2, h3 {
     margin-bottom: 30px;
@@ -47,10 +55,15 @@ h2, h3 {
 // }
 
 .card-back {
-    width: 900px;
+    // width: 500px;
     height: 400px;
+    padding: 10px 30px;
+    outline: 1px solid #d4d4dc;
+    outline-width: 10px;
+    outline-style: double;
+    background-color: #1d1e22;
 
- @media (min-width: 375px) and (max-width: 800px){
+ @media (min-width: 375px) and (max-width: 812px){
         width: 90%;
     }
 
@@ -59,18 +72,21 @@ h2, h3 {
 `
 
 export const ImgDiv = styled.div`
-    width: 900px;
+    // 
+    height: 400px;
     display: flex;
     flex-direction: column;
    justify-content: center;
    align-items: center;
-   background-color: black;
+   
    
    .project-image {
        width: 100%;
+       height: 250px;;
+       object-fit: cover
    }
 
-    @media (min-width: 375px) and (max-width: 800px){
+    @media (min-width: 375px) and (max-width: 812px){
         width: 90%;
         margin: 0 auto;
     }
@@ -82,6 +98,7 @@ export const ImgDiv = styled.div`
     height: 50px;
     width: 80%;
     display: flex;
+    margin: 10px 0;
     justify-content: space-around;
     align-items: center;
    
@@ -93,7 +110,7 @@ export const ImgDiv = styled.div`
     }
 
     .project-icon:hover {
-        color: yellow;
+        color: #feda6a;;
     }
 `
 
@@ -101,7 +118,7 @@ export const Img = styled.img`
 
     width: 500px;
 
-    @media (min-width: 375px) and (max-width: 800px){
+    @media (min-width: 375px) and (max-width: 812px){
         width: 75%;
     }
     

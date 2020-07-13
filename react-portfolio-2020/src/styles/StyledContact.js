@@ -1,12 +1,12 @@
 import styled from 'styled-components';
 
 export const StyledContact = styled.div`
-    background-color: #353535;
+    background-color:  #1d1e22;
      height: 90vh;
     width: 100%;
 
 h2 {
-    color: #fff;
+    color:#d4d4dc;
     margin: 40px auto;
 }
 .container {
@@ -23,11 +23,11 @@ h2 {
 }
 
 .contact-form-class {
-    background-color: #2a2a2a;
+    background-color:  #1d1e22;
     width: 100%;
    margin: 0 auto;
     padding: 5% 0;
-    
+    outline: 1px solid #d4d4dc;
 
      .icons {
        margin: 0 auto;
@@ -51,7 +51,7 @@ h2 {
         visibility: hidden;
         width: 100px;
         background-color: black;
-        color: #fff;
+        color: #d4d4dc;
         text-align: center;
         padding: 5px 0;
         border-radius: 6px;
@@ -64,13 +64,13 @@ h2 {
     }
 
    a {
-       color: white;
+       color: #d4d4dc;
        margin: 20px 40px;
        font-size: 2em;
    }
 
    a:hover {
-       color: yellow;
+       color: #feda6a;
    }
 
 }
@@ -78,33 +78,45 @@ h2 {
 textarea {
     width: 60%;
     resize: none;
-    color: #fff;
+    color:#d4d4dc;
     background-color: transparent;
     border: none;
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid #d4d4dc;
     padding: 5px;
 }
 
 .submit-btn {
-    background-color: #fff;
+    background-color: #d4d4dc;
     color: #2a2a2a;
     padding: 5px 0;
     margin: 20px auto 0 auto;
     text-transform: uppercase;
     width: 20%;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    border: 1px solid #feda6a;
+    background-color: #1d1e22;
+    color: #d4d4dc;
 }
 
  input {
-     color: #fff;
+     color: #d4d4dc;
      background-color: transparent;
      border: none;
-     border-bottom: 1px solid #fff;
+     border-bottom: 1px solid #d4d4dc;
      width: 60%;
      padding: 5px;
      margin-bottom: 20px;
  }
 
+ @media (min-width: 375px) and (max-width: 800px) {
 
+     .submit-btn {
+         width: 60%;
+     }
+ }
  
 
 
