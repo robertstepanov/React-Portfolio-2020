@@ -33,7 +33,7 @@ export const StyledHome = styled.div`
     
 
     .cls-1 {
-        fill:  #feda6a;
+        fill:  #d4d4dc;
     }
 
     h1 {

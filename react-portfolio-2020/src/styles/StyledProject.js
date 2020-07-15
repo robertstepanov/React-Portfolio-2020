@@ -23,7 +23,8 @@ export const CardFront = styled.div`
     // width: 500px;
     // height: 400px;
     background-color: #1d1e22;
-    border: 1px solid #fff;
+    border: 1px solid #d4d4dc;
+    
 
 
 @media (min-width: 375px) and (max-width: 812px){
@@ -59,8 +60,6 @@ h2, h3 {
     height: 400px;
     padding: 10px 30px;
     outline: 1px solid #d4d4dc;
-    outline-width: 10px;
-    outline-style: double;
     background-color: #1d1e22;
 
  @media (min-width: 375px) and (max-width: 812px){
@@ -80,11 +79,11 @@ export const ImgDiv = styled.div`
    align-items: center;
    
    
-   .project-image {
-       width: 100%;
-       height: 250px;;
-       object-fit: cover
-   }
+//    .project-image {
+//        width: 100%;
+//        height: 250px;;
+       
+//    }
 
     @media (min-width: 375px) and (max-width: 812px){
         width: 90%;
@@ -116,7 +115,9 @@ export const ImgDiv = styled.div`
 
 export const Img = styled.img`
 
-    width: 500px;
+    width: 100%;
+    height: 250px;
+    object-fit: contain;
 
     @media (min-width: 375px) and (max-width: 812px){
         width: 75%;
