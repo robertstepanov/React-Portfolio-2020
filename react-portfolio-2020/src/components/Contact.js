@@ -57,9 +57,9 @@ export class Contact extends Component {
 
                          <div className='icons'>
                
-                            <a href="mailto:robertdstepanov@gmail.com" target="_blank"><icon className="fas fa-envelope"></icon></a>
-                            <a href="https://www.linkedin.com/in/robert-stepanov-7b7739aa/" target="_blank"><icon alt="linked in logo" className="fab fa-linkedin-in"></icon></a>
-                            <a href="https://github.com/robertstepanov" target="_blank"><icon alt="github logo" className="fab fa-github"></icon></a>
+                            <a href="mailto:robertdstepanov@gmail.com" target="_blank" rel="noopener noreferrer"><icon className="fas fa-envelope"></icon></a>
+                            <a href="https://www.linkedin.com/in/robert-stepanov-7b7739aa/" target="_blank" rel="noopener noreferrer"><icon alt="linked in logo" className="fab fa-linkedin-in"></icon></a>
+                            <a href="https://github.com/robertstepanov" target="_blank" rel="noopener noreferrer"><icon alt="github logo" className="fab fa-github"></icon></a>
                             <a href={Resume} download='Resume.pdf ' className='resume'><span className='tooltip'>Resume</span><icon alt="resume logo" className="fas fa-file-pdf"></icon></a>
                             
                            
