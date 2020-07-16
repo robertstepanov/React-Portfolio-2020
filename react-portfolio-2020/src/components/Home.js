@@ -1,4 +1,5 @@
 import React  from 'react'
+import { NavLink } from 'react-router-dom';
 import Footer from './Footer'
 // import logo from '../images/RS_logo_silver.png';
 import resume from '../images/resume_icon.png';
@@ -53,7 +54,8 @@ export default function Home() {
                            
                             
             </div>
-            <a href="Projects"><button className='cta-button'>My Work</button></a>
+            <NavLink to='/projects' className='cta-button'>My Work</NavLink>
+            {/* <a href="Projects"><button className='cta-button'>My Work</button></a> */}
             
             <Footer footerClass={''} />
     

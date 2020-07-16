@@ -49,10 +49,12 @@ export const StyledHome = styled.div`
 
    .cta-button {
        border-radius: 5px;
-       padding: 10px 30px;
+       padding: 10px 70px;
        background-color:#feda6a;
        color: black;
-       width: 250px;
+       text-decoration: none;
+       
+       font-size: 1em;
    }
 
    .cta-button:hover {
